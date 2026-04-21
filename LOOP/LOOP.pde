@@ -1,5 +1,5 @@
 
-int num = 6;
+int num = 7;
 boolean side = false;
 
 size(600, 600);
@@ -33,7 +33,7 @@ if (num == 2) {
 if (num == 3) {
   for ( int size = 0; size <= height; size += 5) {
     noFill();
-    circle(300,300,size);
+    circle(300, 300, size);
   }
 }
 
@@ -41,7 +41,7 @@ if (num == 4) {
   for ( int size = 0; size <= height; size += 10) {
     noFill();
     rectMode(CENTER);
-    rect(300,300,size+20,size);
+    rect(300, 300, size+20, size);
   }
 }
 
@@ -49,14 +49,25 @@ if (num == 4) {
 
 if (num == 5) {
   for ( int x = 0; x <= 600; x += 10) {
-    line(0,x,x,600);
-    line(600,x,x,00);
+    line(0, x, x, 600);
+    line(600, x, x, 00);
   }
 }
 
 if (num == 6) {
   for ( int y = -600; y <= height; y += 5) {
-    line(0, 0, 600, 600+y);    
+    line(0, 0, 600, 600+y);
     line(0, 0+y, 600, 600);
+  }
+}
+
+
+if (num == 7) {
+  for ( int y = -600; y <= height; y += 5) {
+    stroke(random(255),random(255),random(255));
+    line(0, 0, 600, 600+y);
+    line(0, 0+y, 600, 600);
+    line(0, 0, 600+y, 600);
+    line(0+y, 0, 600, 600);
   }
 }
